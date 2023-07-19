@@ -11,17 +11,26 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
+    "plugins": [
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-vvrqmgyuo32hrxjv.us.auth0.com",
+          "customScheme": "mynativeapp"
+        }
+      ]
     ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.reactnativeTODO2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.reactnativeTODO2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
